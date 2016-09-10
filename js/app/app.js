@@ -2444,7 +2444,7 @@ module.exports = function () {
 function loadScript() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDU837UaRYUNYYZ0pgm5nJi1_TJGqmDcVA&v=3.exp&' +
     'callback=initGoogleMaps';
     document.body.appendChild(script);
 }
