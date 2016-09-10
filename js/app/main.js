@@ -950,6 +950,16 @@ require('./_sidebar-toggle-bar');
                             $scope.app.settings.htmlClass = 'hide-sidebar top-navbar ls-bottom-footer-fixed';
                         }]
                     });
+
+                $stateProvider
+                    .state('filters', {
+                        url: '/filters',
+                        templateUrl: 'partials/filters.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = '';
+                        }]
+                    });
+
             }
         ]
     );
