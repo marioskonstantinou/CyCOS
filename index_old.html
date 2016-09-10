@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Angular Demo</title>
+	    <script src="lib/angular/angular.min.js"></script>
+	    <script src="lib/angular/angular-route.min.js"></script>
+	    <script src="lib/angular/angular-ui-router.js"></script>
+	    <script src="lib/angular/angular-animate.min.js"></script>
+	    <script src="lib/angular/angular-aria.min.js"></script>
+	    <script src="lib/angular/angular-messages.min.js"></script>
+	    <script src="lib/angular/angular-material.min.js"></script>
+	    <script src="lib/angular/angular-resource.min.js"></script>
+	    <script src="http://m-e-conroy.github.io/angular-dialog-service/javascripts/dialogs.min.js" type="text/javascript"></script>
+	    <script src="lib/google_maps/angular-google-maps.min.js"></script>
+	    <script src="http://ngmaterial.assets.s3.amazonaws.com/svg-assets-cache.js"></script>
+	    <script src="js/app.js"></script>
+	    <script src="js/controllers.js"></script>
+		<!-- Bootstrap -->
+		<script src="lib/jquery/jquery-1.12.2.min.js"></script>
+		<script src="lib/jquery/jquery-ui.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="lib/bootstrap/js/ui-bootstrap-tpls-1.2.4.min.js"></script>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/bootstrap/css/ui-bootstrap-custom-1.2.4-csp.css">
+		<link rel="stylesheet" href="lib/angular/angular-material.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>	
+		<nav class="navbar navbar-default" style="background-color: #2F69E3;">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		      </button>
+		      <a href="/" style="float: left"> <img class="header-logo" src="/img/dataffirm_logo-88d003925dd2b5d8d273b8502235d78985030e6882ccbb7d1677a4c9fa36a5bd.png" alt="Dataffirm logo 88d003925dd2b5d8d273b8502235d78985030e6882ccbb7d1677a4c9fa36a5bd" /> </a>
+		    </div>
+		    <div id="navbar" class="navbar-collapse collapse">
+		        <ul class="nav navbar-nav"> 
+			        <form class="navbar-form" role="search"  ng-controller="NavigationController">
+						<div class="header-search text-center"> </div> 
+						    <div class="control-container" style="position: relative; bottom: 10px";> <div class="il comp_sm_btn" style="position:absolute">
+								<button type="button" class="btn btn_search_option dropdown-toggle btn_selected_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" selection="company_selected"> <span> {{name}} </span> 
+									<span class="caret pull-right"></span> 
+								</button>
+							    <ul class="dropdown-menu"> 
+								    <li class="text-center width_100_pct" ng-repeat="name in names" for="{{name}}"> 
+								    	<a href="#" ng-value="name"  id="{{name}}" ng-click="placeholder(name)"  name="search" class="sub_sel width_100_pct">{{name}}</a> 
+								    </li> 
+								</ul>
+							</div>
+							<div class="il">
+								<input id="search_box_top" type="text" value="" placeholder="{{text}}" class="df-search-text small_size_search" size="45"/>
+							</div>
+							<div class="il"> 
+								<a class="btn df-search-button small_size_search_button li_less_height" id="nav_hreftwo" selection="company" role="button"> 
+									<img class="mag-glass" src="/img/mag_glass-70cbb278ea94d54e502d5c35f808dad74dd7fa46d5f87296072818921ce8f357.png" alt="Mag glass 70cbb278ea94d54e502d5c35f808dad74dd7fa46d5f87296072818921ce8f357"/> 
+								</a> 
+							</div> 
+						</div>
+			        </form>
+		        </ul>
+		    </div>
+		  </div>
+		</nav>
+		
+		<div class="container" ng-controller='GeneralController'>
+			<h1> 
+				<div class="info">{{general.company_name}} </div>
+			</h1>
+			<hr>
+			<div class="row">
+				<label class="{{general.company_status}}"> {{general.company_status}} </label>	
+			</div>
+			
+			<div class="row" ng-controller="ModalDemoCtrl">
+				<md-button class="md-primary md-raise" aria-label="info" ng-click="open('sm')" style="float: right;">
+			 		<span class="glyphicon glyphicon-info-sign"></span>
+				</md-button>
+			</div>
+        	<md-tabs md-selected="currentTab" md-dynamic-height class="container">
+		 		<md-tab label="General" ui-sref="tabs.general">
+<!-- 		 			<md-content class="md-padding" ui-view></md-content> -->
+		 		</md-tab>
+		 		<md-tab label="Financial" ui-sref="tabs.financial">
+<!-- 		 			<md-content class="md-padding" ui-view></md-content> -->
+		 		</md-tab>
+		 		<md-tab label="Corporate Filings & Company Events" ui-sref="tabs.corporate">
+<!-- 		 			<md-content class="md-padding" ui-view></md-content> -->
+		 		</md-tab>
+		 		<md-tab label="Group" ui-sref="tabs.group">
+<!-- 		 			<md-content class="md-padding" ui-view></md-content> -->
+		 		</md-tab>
+		 		<md-tab label="People & Contact" ui-sref="tabs.people">
+<!-- 		 			<md-content class="md-padding" ui-view></md-content> -->
+		 		</md-tab>
+           </md-tabs>
+           <div class="md-padding np-scope md-content" ui-view></div>
+		</div>
+		
+		<div class="change_footer_marg_top new-footer-cutoff">			
+		</div> 
+		<div class="footer-container"> 
+			<div class="footer-white-part "> 
+				<nav class="container-fluid tac footer"> 
+					<ul class="footer-menu"> 
+						<a class="bottom_href" href="/">Home</a> 
+						<li class="seperator">
+							<img src="/img/footer_seperator-f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7.png" alt="Footer seperator f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7"/>
+						</li>
+						<a class="bottom_href" href="/about_us">About</a> 
+						<li class="seperator">
+							<img src="/img/footer_seperator-f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7.png" alt="Footer seperator f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7"/>
+						</li> 
+						<a class="bottom_href" href="/directory/A/1">Directory</a> 
+						<li class="seperator">
+							<img src="/img/footer_seperator-f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7.png" alt="Footer seperator f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7"/>
+						</li> 
+						<a class="bottom_href" href="/contact_us">Contact</a> 
+						<li class="seperator">
+							<img src="/img/footer_seperator-f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7.png" alt="Footer seperator f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7"/>
+						</li> 
+						<a class="bottom_href" href="/partners">Partners</a> 
+						<li class="seperator">
+							<img src="/img/footer_seperator-f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7.png" alt="Footer seperator f0b9bf97434e39f633216b2bf14bd5641c0f0f19c2a49837ce4251a4f75065c7"/>
+						</li> 
+						<a class="bottom_href" href="/terms">Terms & Conditions</a> 
+					</ul> 
+					<div class="footer-copyright">
+						&copy; 2015-2016, Dataffirm Ltd. All Rights Reserved.
+					</div>
+				</nav> 
+			</div> 
+		</div>
+	</body>	
+</html>
