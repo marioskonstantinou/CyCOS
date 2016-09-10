@@ -1,0 +1,1361 @@
+<div class="container col-lg-12 col-sm-12 col-xs-12" style="width: 100%;">
+	<div class="row col-lg-12 col-sm-12 col-xs-12">
+		<div class="row fixed_height_335"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Account details:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row">
+							<br>
+						</div>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Accounts reference date: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px">{{financials.accounts_reference_date}} </div>
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Latest accounts: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  >{{financials.latest_accounts}} </div>
+
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Next accounts due: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  >{{financials.next_accounts_due}} </div>
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Accounts category: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px">{{financials.accounts_category}} </div>
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Consolidated accounts: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px" >{{financials.consolidated_accounts}} </div>
+
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Banker: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px" >{{financials.banker}} </div>
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Accountant: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px">{{financials.accountant}} </div>
+
+						</div>
+						<br>
+						<div class="row">
+							 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Currency: </div> 
+							 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px">{{financials.currency}} </div>
+
+						</div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Financial accounts:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+						<br>
+			            <div class="row header_top_border">
+					        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Currency: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials.currency}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fa:turnover']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Pre-Tax Profit: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:pretax_profit']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Net Assets(Liab.): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['fa:net_assets_liab']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Shareholder Funds: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['fa:shareholder_funds']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Profit Margin: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['fa:profit_margin']}} </div>
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on Shareholder Funds: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:return_on_shareholder_funds']}} </div>
+							
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on Capital Employed: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fa:return_on_capital_employeed']}} </div>
+							
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Gearing: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['fa:gearing']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Liquidity ratio: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['fa:liquidity_ratio']}} </div>
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Employee Numbers: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:employee_numbers']}} </div>
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_500">
+        <div class="no-data-double no-data-border no-data-child">
+            <div>
+                <div> This is not available from the statutory register. </div>
+            </div>
+        </div>
+	</div>
+    
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row header_top_border"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Profit & loss:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<br>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+		<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+		<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+						<br>
+			            <div class="row header_top_border">
+					        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fa:turnover']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            UK turnover figures:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['fa:turnover']}} </div>
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Exports:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:turover_exports']}} </div>
+
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Cost of sales: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:cost_of_sales']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Gross profit: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:gross_profit']}} </div>
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Operating profit: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:operating_profit']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Pre-Tax profit: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:pretax_profit']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Tax: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:tax']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Profit after tax: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:profit_after_tax']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Dividends: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:dividends']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Profit attributed: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:profit_attributable_to_minority_interests']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other appropriations: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:other_appropriations']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Retained profit: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:retained_profit']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Interest receivable: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:Interest_Receivable']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                             Bank interest receivable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:Interest_Receivable_bank_interest']}} </div>
+
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Group interest receivable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:Interest_Receivable_group_interest']}} </div>
+
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Other interest receivable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:Interest_Receivable_other_interest']}} </div>
+
+		 				</div>
+		 				<br>
+						<div class="row header_top_border">
+				            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Interest payable: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:interest_payable']}} </div>
+
+			            </div>
+			            <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                              Bank interest payable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:interest_payable_bank']}} </div>
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Lease interest payable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:interest_payable_lease']}} </div>
+
+		                </div>
+		                <br>
+			            <div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Hire purchase interest payable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:interest_payable_hp']}} </div>
+
+		 				</div>
+		 				<br>
+		 				<div class="row header_top_border">
+		                    <div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+		                        <div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+		                            <img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+		                        </div>
+		                        <div class="inline">
+		                            Other interest payable:
+		                        </div>
+		                    </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:interest_payable_other']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Director remuneration: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pl:directors_remuneration']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Director fees:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:directors_remuneration_fees']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Director pensions:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:directors_remuneration_pensions']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Director social security:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:directors_remuneration_social_security']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Director other:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:directors_remuneration_other']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Highest paid director: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:highest_paid_director']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Employee costs: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:employee_costs']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Employee remuneration:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['']}} </div>
+ 
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Pensions:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:employee_costs_pensions']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Social security:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['pl:employee_costs_social_security']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Other:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['pl:employee_costs_other']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Employee numbers: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pl:employee_numbers']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> D>{{financials['pl:depreciation_of_tangibles']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Amortisation of intangibles: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:amortisation_of_intangibles']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Exceptional items: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:exceptional_items']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Exceptional profit/loss on reorganisations:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['pl:exceptional_items_profit_loss_reorganisations']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Exceptional profit/loss on disposal/acquisition:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:exceptional_items_profit_loss_disposal']}} </div>
+
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Exceptional other items:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['pl:exceptional_items_other']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Auditor fees: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:auditor_fees']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Statutory audit costs:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px">{{financials['pl:auditor_fees_statutory']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Other audit costs:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['pl:auditor_fees_other']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Accountant fees: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pl:accountant_fees']}} </div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_1000">
+	    <div class="no-data-double no-data-border no-data-child">
+	        <div>
+	            <div> This is not available from the statutory register. </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row header_top_border"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Balance sheet:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+			           
+						<div class="row header_top_border grey_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Fixed assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_fixed_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Tangible assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:tangible_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Intangible assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:intangible_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Investment & other: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Debtors due after one year: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:debtors_due_after_one_year']}} </div>
+						</div>
+						<br>
+						<div class="row financial-sub-total">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px  bold-bold black"> Total fixed assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px  bold-bold black" >{{financials['bs:total_fixed_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border grey_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_current_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Stocks & work-in-progress: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:stocks_workin_progress']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Debtors: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:debtors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Trade debtors:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['bs:trade_debtors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Group debtors:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:group_debtors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Misc. debtors:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['bs:misc_debtors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Cash: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:cash']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Misc. current assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border financial-sub-total">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px  bold-bold black"> Total current assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px  bold-bold black" >{{financials['bs:total_current_assets']}} </div>
+						</div>
+						<br>
+						<div class="row blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px  bold-bold black"> Total assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px  bold-bold black" >{{financials['fr:total_Assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border grey_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Creditors: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:creditors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Trade creditors:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['bs:trade_creditors']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Bank overdraft: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:bank_overdraft']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Bank loan: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:bank_loan']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Group accounts: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:group_accounts']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Directors accounts: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:lt_directors_accounts']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other short term loans: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:other_short_term_loans']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current hire purchase commitments: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:current_hire_purchase_commitments']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current lease commitments: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:current_lease_commitments']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px_semibold"> Total other current liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_other_current_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current tax liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Accruals & deferred income: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:accruals_and_deferred_income']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Dividends: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:dividends']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other current liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['other_current_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row  financial-sub-total">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px  bold-bold black"> Total current liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px bold-bold black" >{{financials['bs:total_current_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border grey_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Long term liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Total long-term loans: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_long_term_loans']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Long-term bank loans:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['bs:lt_bank_loans']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Long-term group accounts:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:lt_bank_loans_group_accounts']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Long-term directors accounts:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px" >{{financials['lt_directors_accounts']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Long-term other loans/finance:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:lt_other_loans']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Total non-current hire purchase & lease commitments: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Non-current hire purchase commitments:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:non_current_hire_purchase_commitments']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Non-current lease commitments:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Net pension liability:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:net_pension_liability']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px_semibold"> Total other non-current liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_other_non_current_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Accruals and deferred income due after 1 year: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:accruals_and_deferred_income_due_after_one_year']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other long-term liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:other_lt_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Total provisions: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:total_provisions']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Deferred tax liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:deferred_tax_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other provisions: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:other_provisions']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border  financial-sub-total">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px  bold-bold black"> Total long-term liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px bold-bold black" >{{financials['bs:total_long_term_liabilities']}} </div>
+						</div>
+						<br>
+						<div class="row blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 media_scroll_horizontal  grand_total bold-bold"> Total liabilities: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 media_scroll_horizontal  grand_total bold-bold"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 media_scroll_horizontal  grand_total bold-bold"> Working capital: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 media_scroll_horizontal  grand_total bold-bold" >{{financials['fr:working_capital']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 media_scroll_horizontal  grand_total bold-bold"> Net assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 media_scroll_horizontal  grand_total bold-bold"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border grey_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Shareholder funds: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['fa:shareholder_funds']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Total called up/Issued capital: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:total_called_up_issued_capital']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Ordinary shares:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:ordinary_shares']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Preference shares:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:preference_shares']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="media_scroll_horizontal open_sans_13_px  col-xs-12 col-sm-4 col-md-4 col-lg-8">
+								<div class="media_scroll_horizontal open_sans_13_px inline padding_right_15">
+									<img class="style_map_pin" src="/img/oval_circle-6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8.png" alt="Oval circle 6409343e07007fe837621d10998f85c41bc8c9fada8216c7217c01fd760156d8" />
+								</div>
+								<div class="inline">
+									Other shares:
+						   		</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3 open_sans_13_px"  >{{financials['bs:other_shares']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> >{{financials['bs:profit_and_loss_revenue_reserve']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Revaluation reserve: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Other reserves: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['bs:other_reserves']}} </div>
+						</div>
+						<br>
+						<div class="row financial-sub-total">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px bold-bold black"> Total shareholders' funds: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px bold-bold black"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 grand_total bold-bold"> Capital employed: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 grand_total bold-bold"  >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row blue_border_top_bot">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 grand_total bold-bold"> Net worth: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 grand_total bold-bold" >{{financials['']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Minority interest: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['bs:minority_interests']}} </div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_2000">
+        <div class="no-data-double no-data-border no-data-child">
+            <div>
+                <div> This is not available from the statutory register. </div>
+            </div>
+        </div>
+	</div>
+	
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Cash flow:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Net cash flow from operations: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:net_cashflow_from_operations']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on investment: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:return_on_investment']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Taxation: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['cf:taxation']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Capital expenditure: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:capital_expenditure']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Acquisitions & disposals: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['cf:acquisitions_and_disposals']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Equity dividends paid: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:equity_dividends_paid']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Management of liquid resources: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['cf:management_of_liquid_resources']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Net cash flow from financing: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:net_cashflow_from_financing']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Decrease/Increase in cash: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['cf:decrease_in_cash']}} </div>
+						</div>
+						<br>
+			            <div class="row header_top_border">
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_400">
+        <div class="no-data-double no-data-border no-data-child">
+            <div>
+                <div> This is not available from the statutory register. </div>
+            </div>
+        </div>
+	</div>
+	
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final"> Financial ratio:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current ratio: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:current_ratio']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Liquidity test: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['fr:liquidity_test']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Equity ratio: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['fr:equity_ratio']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Gearing: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:gearing']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Current debt ratio: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['fr:current_debt_ratio']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Shareholder funds/ Empl. (Unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:shareholder_funds_empl']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Working capital/ Empl. (Unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:working_capital']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Total assets/ Empl. (Unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:total_Assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Solvency ratio: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:solvency_ratio']}} </div>
+						</div>
+						<br>
+			            <div class="row header_top_border">
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_400">
+        <div class="no-data-double no-data-border no-data-child">
+            <div>
+                <div> This is not available from the statutory register. </div>
+            </div>
+        </div>
+	</div>
+	
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final"> Profitability ratio:</h2>				  	
+					</div>
+					<div class="container" style="width: 100%">
+						<div class="row header_top_border">
+							<br>
+						</div>
+						<div class="row header_top_border blue_row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Date: </div>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"> - </div>
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> </div> -->
+<!-- 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  ng-if=""> - </div> -->
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Profit margin: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:profit_margin']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on shareholder funds: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:return_on_shareholder_funds']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on capital employed: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:return_on_capital_employed']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on total assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:return_on_total_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Return on net assets: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:return_on_net_assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Interest cover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:interest_cover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Stock turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px">{{financials['pr:stock_turnover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Debtors turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['fr:total_Assets']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Debtor collection (days): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:debtors_turnover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Creditors payment (days): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:creditors_payment']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Net assets turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:net_assets_turnover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Fixed assets turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:fixed_assets_turnover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Salaries/Turnover: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:salaries_turnover']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Turnover per employee (unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:turnover_per_employee']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Average remuneration per employee (unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:average_remun_per_employee']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Profit per employee (unit): </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px"  >{{financials['pr:profit_per_employee']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Sales per working capital: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:sales_per_working_capital']}} </div>
+						</div>
+						<br>
+						<div class="row header_top_border">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-8 open_sans_13_px"> Mark up: </div> 
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 open_sans_13_px" >{{financials['pr:mark_up']}}</div>				
+						</div>
+						<br>
+			            <div class="row header_top_border">
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="row col-lg-6 col-sm-12 col-xs-12 fixed_height_600">
+        <div class="no-data-double no-data-border no-data-child">
+            <div>
+                <div> This is not available from the statutory register. </div>
+            </div>
+        </div>
+	</div>
+	
+	<div class="row col-lg-12 col-sm-12 col-xs-12">
+		<div class="row"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final"> Mortgage summary:</h2>				  	
+					</div>
+					<div class="row blue_row col-xs-12 col-sm-12 col-md-12 col-lg-12 open_sans_13_px">
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Created</div>
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Registered</div>
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Satisfied</div>
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Mortgage type</div>
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Amount secured</div>
+						<div class="col-lg-2 media_scroll_horizontal open_sans_13_px text-center">Persons entitled</div>
+					</div>
+					<div class="row col-lg-12 col-sm-12 col-xs-12 " style="background-color: #e6e6e6;">
+						<div class="no-data-double no-data-border no-data-child">
+							<div>
+								<div> This is not available from the statutory register. </div>
+            				</div>
+        				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

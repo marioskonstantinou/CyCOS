@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default" style="background-color: #2F69E3;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color: white;">Dataffirm</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+	        <ul class="nav navbar-nav" ng-controller="SearchController">
+		        <form class="navbar-form navbar-left navbar-input-group col-lg-6 col-sm-4 col" role="search">
+			        <div class="input-group">
+						<div class="input-group-btn">
+						  <div class="form-group">
+						    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{my.search}}											<span class="caret"></span>
+						    </button>
+					        <ul class="dropdown-menu">
+					          <li ng-repeat="name in names" for="{{name}}">
+					          <div>
+					          	<label>
+					          		{{name}}
+					          		<input type="radio" ng-model="my.search" ng-change="placeholder()" ng-value="name" id="{{name}}" name="search"> 
+					          	</label>
+					          </div>
+					          </li>
+					        </ul>
+					      </div><!-- /btn-group -->
+					    </div>
+					    <input type="text" class="form-control" placeholder="{{text}}">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-success">
+								<span class="glyphicon glyphicon-search"></span> 
+							</button>
+						</div>
+			        </div>
+				</form>
+	        </ul>
+    	</div>
+    </div>
+</nav>

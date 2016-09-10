@@ -1,0 +1,113 @@
+<div class="container col-lg-12 col-sm-12 col-xs-12" style="width: 100%;">
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row fixed_height_335"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+				  	<div class="header_bottom_border"> 				  	
+					  	<h2 class="h2_margin_half_card h2_final">Company Details:</h2>				  	
+				  	</div>
+				  	<div class="container" style="background-color: white; width: 100%">
+					  	<div class="row">
+						  	<br>
+					  	</div>	
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Company name: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.company_name">{{general.company_name}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.company_name"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Company type: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.company_type">{{general.company_type}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.company_type"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Company description: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.description">{{general.description}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.description"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Incorporation date: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.incorporation_date">{{general.incorporation_date}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.incorporation_date"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> SIC 2003: </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.sic_code">{{general.sic_code}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.sic_code"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> SIC 2007: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.sic_desc">{{general.sic_desc}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.sic_desc"> - </div>
+				  		</div>
+				  	</div>
+				</div>
+		  	</div>
+		</div>
+	</div>
+	<div class="row col-lg-6 col-sm-12 col-xs-12">
+		<div class="row fixed_height_335"> 
+			<div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 				  	
+						<h2 class="h2_margin_half_card h2_final">Contact Details:</h2>				  	
+					</div>
+					<div class="container" style="background-color: white; width: 100%">
+						<div class="row">
+						  	<br>
+					  	</div>
+					  	<div class="row">
+						  	<br>
+					  	</div>	
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Telephone: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="general.telephone">{{general.telephone}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.telephone"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Website: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px" ng-if="general.company_type">{{general.company_type}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.company_type"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Registered address: </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px" ng-if="general.reg_adr_street1">{{general.reg_adr_street1}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.reg_adr_street1"> - </div>
+				  		</div>
+				  		<br>
+				  		<div class="row">
+					  		 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 open_sans_13_px_semibold"> Trading address </div> 
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px" ng-if="general.trd_adr_street1">{{general.trd_adr_street1}} </div>
+					  		 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 open_sans_13_px"  ng-if="!general.trd_adr_street1"> - </div>
+				  		</div>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	</div>
+	<div class="row col-lg-12 col-sm-12 col-xs-12">
+		<div class="row fixed_height_335"> 
+		    <div id="registered_names_section" class="pad_top_left_right_15 height_100_pct"> 
+				<div class="row account_turnover no_padding_top height_100_pct"> 
+					<div class="header_bottom_border"> 
+						<h2 class="h2_margin_half_card h2_final">Previous names</h2> 
+					</div> 
+					<div class="no-data-double no-data-border"> 
+						<div> 
+							<div> This is not available from the statutory register. </div> 
+						</div> 
+					</div>
+				</div> 
+			</div> 
+		</div>
+	</div>
+</div>
+
+
