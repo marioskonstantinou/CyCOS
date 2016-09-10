@@ -34,6 +34,67 @@
   </nav>
 
   <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+  <aside class="sidebar left sidebar-size-4 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop" id=sidebar-filter>
+    <div data-scrollable>
+      <div class="category">Men/Women %</div>
+      <div class="sidebar-block">
+        <input data-slider="default" type="text" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[0,100]" data-slider-handle="square" />
+      </div>
+
+      <div class="category">Population/m<sup>2</sup></div>
+      <div class="sidebar-block">
+        <div class="form-group input-group margin-none">
+          <div class="row margin-none">
+            <div class="col-xs-6 padding-none">
+              <input class="form-control" type="text" placeholder="Min ..">
+            </div>
+            <div class="col-xs-6 padding-none">
+              <input class="form-control" type="text" placeholder="Max ..">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category">City</div>
+      <div class="sidebar-block">
+        <ul class="list-group list-group-menu">
+          <li class="list-group-item"><a href="#"><span class="badge pull-right">70+</span> Ammochostos</a></li>
+          <li class="list-group-item"><a href="#"><span class="badge pull-right">120+</span> Larnaca</a></li>
+          <li class="list-group-item active"><a href="#"><span class="badge pull-right">30+</span> Limassol</a></li>
+          <li class="list-group-item"><a href="#"><span class="badge pull-right">40+</span> Nicosia</a></li>
+          <li class="list-group-item"><a href="#"><span class="badge pull-right">60+</span> Paphos</a></li>
+        </ul>
+
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="radius50" type="checkbox" checked />
+          <label for="radius50">50km radius</label>
+        </div>
+      </div>
+
+      <div class="category">Nearby</div>
+      <div class="sidebar-block">
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="schools" type="checkbox" checked />
+          <label for="schools">Schools</label>
+        </div>
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="hospitals" type="checkbox" checked />
+          <label for="hospitals">Hospitals</label>
+        </div>
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="police" type="checkbox" checked />
+          <label for="police">Police stations</label>
+        </div>
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="church" type="checkbox" checked />
+          <label for="church">Churches</label>
+        </div>
+        <div class="checkbox checkbox-primary margin-none">
+          <input id="pillars" type="checkbox" checked />
+          <label for="pillars">Avoid electricity pillars</label>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <!-- content push wrapper -->
   <div class="st-pusher">
